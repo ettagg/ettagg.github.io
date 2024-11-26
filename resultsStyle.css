@@ -1,0 +1,31 @@
+/* Style for the body */
+body {
+    text-align: center;
+    margin-top: 200px; /* Space from the top */
+    background: #a88bdf; /* Background color for the body */
+    color: white; /* Text color */
+    margin: 0; /* Remove default margin */
+    padding: 0; /* Remove default padding */
+}
+
+/* Style for the box wrapping the content */
+.box {
+    background-color: #fff; /* White background for the box */
+    color: #333; /* Dark text inside the box for contrast */
+    padding: 30px; /* Padding inside the box */
+    border-radius: 15px; /* Rounded corners */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    display: inline-block; /* Allow the box to take only the necessary width */
+    max-width: 80%; /* Limit the box's maximum width */
+    margin: 0 auto; /* Center the box horizontally */
+    margin-top: 150px;
+}
+
+/* Optional: Style the content inside the box */
+.box h1 {
+    color: #000000; /* Heading color that matches the background */
+}
+
+.box p {
+    font-size: 12px; /* Font size for paragraph */
+}

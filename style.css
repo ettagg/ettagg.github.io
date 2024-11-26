@@ -1,0 +1,137 @@
+/* Reset some default styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* Body styling */
+  body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #a88bdf; /* Light Purple background */
+  }
+  
+  /* Container for the login form */
+  .login-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+  }
+  
+  /* Styling the login form box */
+  .login-form {
+    background-color: #fff; /* White background for form */
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    width: 300px;
+    text-align: center;
+  }
+  
+  /* Form title styling */
+  .login-form h2 {
+    color: #7f5fbc; /* Purple color for title */
+    margin-bottom: 20px;
+  }
+  
+  /* Input group styling */
+  .input-group {
+    margin-bottom: 15px;
+    text-align: left;
+  }
+  
+  /* Input field styling */
+  .input-group input {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 16px;
+  }
+  
+  /* Button styling */
+  .btn-login {
+    background-color: #7f5fbc; /* Purple button */
+    color: #fff;
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  /* Button hover effect */
+  .btn-login:hover {
+    background-color: #6a4da4; /* Darker purple on hover */
+  }
+  
+  /* Optional: Focus state for inputs */
+  input:focus {
+    border-color: #aa8edf;
+    outline: none;
+  }
+  
+  /* Hearts container */
+  .hearts {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    pointer-events: none;
+  }
+  
+  /* Heart shape */
+  .hearts .heart {
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    background-color: #ff4f81;
+    transform: rotate(45deg);
+    margin: 10px;
+  }
+  
+  .hearts .heart::before,
+  .hearts .heart::after {
+    content: '';
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    background-color: #ff4f81;
+    border-radius: 50%;
+  }
+  
+  .hearts .heart::before {
+    left: -10px;
+    top: 0;
+  }
+  
+  .hearts .heart::after {
+    top: -10px;
+    left: 0;
+  }
+  
+  /* Animation for exploding hearts */
+  @keyframes explode {
+    0% {
+      transform: scale(1) rotate(45deg);
+      opacity: 1;
+    }
+    100% {
+      transform: scale(2) translateY(-1000px) rotate(720deg);
+      opacity: 0;
+    }
+  }
+  
+  /* When heart is added to the DOM */
+  .explode {
+    animation: explode 1s ease-out forwards;
+  }
+  

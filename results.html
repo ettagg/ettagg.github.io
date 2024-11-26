@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Surprise Results!</title>
+    <link rel="stylesheet" href="resultsStyle.css">
+</head>
+<body>
+    <div class="box">
+        <h1>!DATE IDEA CREATED!</h1>
+        <p style="font-style: italic;
+                    margin-bottom: 50px;
+                    margin-top: -10px;">(screenshot this and send it to me)</p>
+        <h2>Date Results</h2>
+    
+        <div id="results">
+            <p><strong>Date Idea:</strong> <span id="dateIdea"></span></p>
+            <p><strong>Time:</strong> <span id="time"></span></p>
+            <p><strong>Communication:</strong> <span id="communication"></span></p>
+        </div>
+    </div>
+
+
+    <script>
+        // Get the values from localStorage
+        var dateIdea = localStorage.getItem("dateIdea");
+        var time = localStorage.getItem("time");
+        var communication = localStorage.getItem("communication");
+
+        // Display the values on the page
+        document.getElementById("dateIdea").textContent = dateIdea;
+        document.getElementById("time").textContent = time;
+        document.getElementById("communication").textContent = communication;
+    </script>
+</body>
+</html>

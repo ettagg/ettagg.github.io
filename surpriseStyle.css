@@ -1,0 +1,136 @@
+/* Reset some default styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body styling */
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column; /* Stack the elements vertically */
+    justify-content: center; /* Vertically center the content */
+    align-items: center;     /* Horizontally center the content */
+    height: 100vh;           /* Make the body take up full height of the viewport */
+    background-color: #a88bdf; /* Light gray background */
+}
+
+/* "Hello" text styling */
+#dm {
+    font-size: 24px;
+    font-weight: bold;
+    color: white;
+    margin-top: 10px;
+}
+
+#by {
+    font-size: 12px;
+    font-weight: bold;
+    color: white;
+    margin-bottom: 30px;
+}
+
+#step1 {
+    font-size: 20px;
+    font-weight: bold;
+    color: white;
+    margin-bottom: 10px;
+    margin-left: -700px;
+}
+
+/* Dropdown container */
+.dropdown-container {
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    width: 300px;
+    height: 120px;
+    margin-left: -500px;
+    text-align: left;
+    margin-bottom: 30px;
+}
+
+/* Label styling */
+.dropdown-label {
+    font-size: 16px;
+    color: #333;
+    margin-bottom: 10px;
+    display: block;
+}
+
+/* Dropdown select styling */
+.dropdown {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 16px;
+    background-color: #f9f9f9;
+    color: #333;
+    cursor: pointer;
+    transition: border-color 0.3s ease, background-color 0.3s ease;
+}
+
+/* Hover effect for the dropdown */
+.dropdown:hover {
+    border-color: #7f5fbc;
+    background-color: #f1f1f1;
+}
+
+/* Focus effect for the dropdown */
+.dropdown:focus {
+    outline: none;
+    border-color: #7f5fbc;
+    background-color: #fff;
+}
+
+/* Option styling */
+.dropdown option {
+    padding: 10px;
+}
+
+#myR {
+    font-size: 18px;
+    font-weight: bold;
+    color: white;
+    margin-right: -350px;
+    margin-bottom: -80px;
+    margin-top: 50px;
+}
+.reaction {
+    margin-right: -500px;
+    margin-top: -450px;
+}
+.reaction img{
+    width: 400px;  /* Set width to 200px */
+    height: auto;  /* Automatically adjust the height to maintain aspect ratio */
+    border-radius: 10px;
+}
+
+/* Button Styling */
+.submit {
+    background-color: #2d0e62;  /* Purple background color */
+    color: white;               /* White text color */
+    border: none;               /* No border */
+    padding: 12px 24px;         /* Padding for button size */
+    font-size: 16px;            /* Font size */
+    border-radius: 8px;         /* Rounded corners */
+    cursor: pointer;           /* Pointer cursor on hover */
+    transition: background-color 0.3s ease, transform 0.3s ease; /* Smooth transition */
+    margin-top: 80px;
+  }
+  
+  /* Button Hover Effect */
+  .submit:hover {
+    background-color: #6a4da4;  /* Darker purple when hovered */
+    transform: scale(1.05);      /* Slightly zoom in the button */
+  }
+  
+  /* Optional: Focus state for accessibility */
+  .submit:focus {
+    outline: none;              /* Remove default outline */
+    box-shadow: 0 0 0 3px rgba(127, 95, 188, 0.5); /* Add a custom focus ring */
+  }
+  
